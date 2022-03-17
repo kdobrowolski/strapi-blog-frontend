@@ -42,8 +42,11 @@
             font-size: 1.3rem;
         }
         & > .container_description {
+            display: -webkit-box;
             margin-bottom: 30px;
-
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
             @include xxl {
                 font-size: 1.4rem;
             }
