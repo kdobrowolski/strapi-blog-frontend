@@ -19,6 +19,18 @@ export const actions = {
         const data = await this.$axios.$get('/api/articles?populate=*', { progress: false });
         commit('SET_ARTICLES', data);
     },
+    async getFilteredArticles ({ commit }) {
+        const { data } = await this.$axios.$get('/api/articles', {
+            params: {
+              populate: '*',
+              sort: ['id:desc'],
+              'pagination[start]': 0,
+              'pagination[limit]': 3,
+            },
+        });
+
+        return data;
+    },
     
     async getOneArticle ({ commit }, payload) {
         const data = await this.$axios.$get(`/api/articles/${payload}?populate=*`, { progress: false });
