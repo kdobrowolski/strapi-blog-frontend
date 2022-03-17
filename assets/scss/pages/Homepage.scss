@@ -1,0 +1,7 @@
+.Page_articles {
+    & > .articles_header {
+        text-align: center;
+        font-size: 3rem;
+        color: $primary-color;
+    }
+}

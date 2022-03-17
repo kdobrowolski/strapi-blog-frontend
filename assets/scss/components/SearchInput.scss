@@ -1,0 +1,17 @@
+.search {
+    text-align: center;
+    & > .search_form {
+        & > .form_input {
+            width: 200px;
+            padding: 5px 10px 5px 10px;
+            border: 0;
+            border-bottom: 2px solid rgb(214, 214, 214);
+            outline: none;
+            transition: .3s;
+
+            &:focus {
+                border-bottom: 2px solid $primary-color;
+            }
+        }
+    }
+}

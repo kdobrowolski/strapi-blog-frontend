@@ -1,0 +1,63 @@
+.footer {
+    width: 100vw;
+    height: 430px;
+    background-color: black;
+    margin-top: 100px;
+
+    & > .footer_container {
+        position: relative;
+        top: 20px;
+        & > .container_menu {
+            text-align: center;
+            & > .menu_list {
+                padding: 0;
+                list-style: none;
+
+                & > .list_item {
+                    margin-top: 20px;
+                    & > a {
+                        font-size: 1.5rem;
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+
+            @include md {
+                width: 50%;
+                float: left;
+            }
+        }
+
+        & > .container_contact {
+            margin-top: 40px;
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+
+            @include md {
+                width: 50%;
+                float: left;
+                margin-top: 0px;
+            }
+        }
+        & > .container_copyright {
+            margin-top: 60px;
+            color: white;
+            text-align: center;
+            font-size: 1.2rem;
+
+            @include md {
+                width: 100%;
+                clear: both;
+                position: relative;
+                top: 50px;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    @include md {
+        height: 280px !important;
+    }
+}

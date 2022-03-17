@@ -1,0 +1,105 @@
+.Nav {
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    background-color: rgb(245, 245, 245);
+    z-index: 9999 !important;
+
+    & > .Nav_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+        & > .Nav_logo {
+            margin-top: 18px;
+            font-size: 2.5rem;
+            color: $primary-color;
+        }
+
+        & > .Nav_menu {
+            display: none;
+            font-size: 3rem;
+
+            @include sm {
+                display: inline;
+                font-size: 1.5rem;
+            }
+            & > .menu_list {
+                margin-top: 50px;
+                padding: 0;
+                list-style: none;
+
+                & > .list_item {
+                    margin-top: 25px;
+                    
+                    & > a {
+                        color: black;
+                        text-decoration: none;
+                        font-weight: bold;
+                        transition: .2s;
+
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+
+                    @include sm {
+                        display: inline-block;
+                        margin-left: 15px !important;
+                    }
+
+                }
+
+                @include sm {
+                    margin: 0;
+                }
+            }
+        }
+
+        & > .container_open_icon {
+            margin-left: auto;
+            margin-top: 12px;
+            font-size: 4rem;
+
+            @include sm {
+                display: none;
+            }
+        }
+        & > .container_close_icon {
+            display: none;
+        }
+
+        @include xl {
+            width: 60%;
+        }
+    }
+}
+
+.active {
+    width: 100vw !important;
+    height: 100vh;
+    & > .Nav_container {
+        display: block;
+        margin-top: 100px;
+        text-align: center;
+
+        & > .Nav_logo {
+            font-size: 4rem;
+        }
+        & > .Nav_menu {
+            display: block !important;
+
+        }
+        & > .container_open_icon {
+            display: none;
+        }
+        & > .container_close_icon {
+            display: block !important;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 5rem;
+        }
+    }
+}

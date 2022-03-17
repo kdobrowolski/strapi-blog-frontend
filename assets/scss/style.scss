@@ -1,0 +1,22 @@
+@import './main.scss';
+
+// pages
+
+@import './pages/Homepage.scss';
+@import './pages/articles/index.scss';
+@import './pages/articles/_article.scss';
+@import './pages/About.scss';
+@import './pages/Contact.scss';
+@import './pages/search/_search.scss';
+
+// components
+
+@import './components/Nav.scss';
+@import './components/Header.scss';
+@import './components/Button.scss';
+@import './components/ArticleCard.scss';
+@import './components/Footer.scss';
+@import './components/Input.scss';
+@import './components/CommentContainer.scss';
+@import './components/Comment.scss';
+@import './components/SearchInput.scss';

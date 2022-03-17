@@ -1,0 +1,29 @@
+.input_container {
+    margin-top: 20px;
+    text-align: center;
+    & > .container_label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        color: $primary-color;
+    }
+    & > .container_input {
+        width: 200px;
+        padding: 10px;
+
+        @include md {
+            width: 400px;
+        }
+    }
+    & > .container_textarea {
+        width: 200px;
+        height: 150px;
+        padding: 10px;
+        resize: none;
+        font-family: 'Montserrat', sans-serif;
+
+        @include md {
+            width: 400px;
+        }
+    }
+}

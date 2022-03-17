@@ -1,0 +1,24 @@
+.Page_article {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px !important;
+    & > .article_image {
+        width: 100%;
+    }
+    & > .article_header {
+        font-size: 2rem;
+        color: $primary-color;
+    }
+    & > .article_tags_and_date {
+        color: $primary-color;
+        font-size: 1.4rem;
+    }
+    & > .article_content {
+        font-size: 1.5rem;
+        white-space: pre-wrap;
+    }
+
+    @include xl {
+        width: 70%;
+    }
+}

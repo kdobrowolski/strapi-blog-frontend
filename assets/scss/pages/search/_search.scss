@@ -1,0 +1,10 @@
+.Page {
+    & > .Page_search {
+        & > .search_header {
+            margin-bottom: 50px;
+            text-align: center;
+            font-size: 2rem;
+            color: $primary-color;
+        }
+    }
+}

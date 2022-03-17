@@ -1,0 +1,14 @@
+.comment {
+    margin-top: 50px;
+    word-wrap: break-word;
+    & > .comment_fullname {
+        color: $primary-color;
+        font-size: 1.9rem;
+    }
+    & > .comment_date {
+        font-size: 1.3rem;
+    }
+    & > .comment_content {
+        font-size: 1.5rem;
+    }
+}

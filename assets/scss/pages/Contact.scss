@@ -1,0 +1,12 @@
+.Page_contact {
+    & > .contact_header {
+        text-align: center;
+        font-size: 2.5rem;
+        color: $primary-color;
+    }
+    & > .contact_info {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}

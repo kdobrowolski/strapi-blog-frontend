@@ -1,0 +1,35 @@
+
+@font-face {
+    font-family: "Montserrat";
+    font-display: swap;
+    src: local("Montserrat"),
+    url(~assets/fonts/Montserrat-VariableFont_wght.ttf) format("truetype");
+}
+
+html, body {
+    margin: 0 auto;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.Page {
+    width: 90%;
+    margin: 0 auto;
+
+    @include xxl {
+        width: 70%;
+    }
+}
+
+.form_error {
+    text-align: center;
+    font-size: 1.5rem;
+    color: $primary-color;
+}
+
+.form_success {
+    text-align: center;
+    font-size: 1.5rem;
+    color: green;
+}

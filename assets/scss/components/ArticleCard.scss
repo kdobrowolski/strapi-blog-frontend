@@ -1,0 +1,56 @@
+.Article_card {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: rgb(245, 245, 245);
+    -webkit-box-shadow: 10px 8px 24px -11px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 10px 8px 24px -11px rgba(66, 68, 90, 1);
+    box-shadow: 10px 8px 24px -11px rgba(66, 68, 90, 1);
+
+    & > .card_image {
+        width: 100%;
+
+        @include sm {
+            width: 50%;
+        }
+
+        @include lg {
+            width: 40%;
+        }
+
+        @include xxl {
+            width: 30%;
+        }
+    }
+
+    @include sm {
+        display: flex;
+    }
+
+    & > .card_container {
+        margin-left: 15px;
+        margin-right: 15px;
+        & > .container_title {
+            font-size: 2rem;
+
+            @include xxl {
+                font-size: 2.4rem;
+            }
+        }
+        & > .container_tags_and_date {
+            color: $primary-color;
+            font-size: 1.3rem;
+        }
+        & > .container_description {
+            margin-bottom: 30px;
+
+            @include xxl {
+                font-size: 1.4rem;
+            }
+        }
+
+        @include sm {
+            margin-left: 20px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.Header {
+    width: 100vw;
+    height: 500px;
+    background-color: rgb(245, 245, 245);
+
+    & > .Header_banner {
+        width: 90%;
+        position: relative;
+        top: 125px;
+        margin: 0 auto;
+        text-align: center;
+         & > .banner_headline {
+             font-size: 3rem;
+             margin-top: 0;
+             color: $primary-color;
+         }
+         & > .banner_underline {
+             margin-bottom: 30px;
+             font-size: 1.5rem;
+         }
+
+         @include xxl {
+             width: 70%;
+         }
+    }
+}

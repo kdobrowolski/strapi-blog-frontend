@@ -1,0 +1,14 @@
+.Page_about {
+    & > .about_header {
+        text-align: center;
+        font-size: 3rem;
+        color: $primary-color;
+    }
+    & > .about_content {
+        font-size: 1.7rem;
+        white-space: pre-wrap;
+        & > img, & > p > img {
+            width: 100%;
+        }
+    }
+}
