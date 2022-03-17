@@ -17,7 +17,7 @@
                 :tags="article.attributes.tags"
                 :content="article.attributes.content"
                 :image="article.attributes.image.data.attributes.url"
-                :date="article.attributes.createdAt"
+                :createdAt="article.attributes.createdAt"
             />
         </div>
     </section>

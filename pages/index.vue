@@ -17,7 +17,7 @@
         :tags="article.attributes.tags"
         :content="article.attributes.content"
         :image="article.attributes.image.data.attributes.url"
-        :date="article.attributes.createdAt"
+        :createdAt="article.attributes.createdAt"
       />
     </section>
   </section>
@@ -26,13 +26,8 @@
 <script>
 export default {
   async asyncData ({ store, $md }) {
-      await store.dispatch('articles/getArticles');
-
-      const res = store.getters['articles/getArticles'];
-
-      const articles = res.data;
-
-      return { articles };
+    const articles = await store.dispatch('articles/getFilteredArticles');
+    return { articles };
   }
 }
 </script>
